@@ -1,3 +1,3 @@
-# Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos
+# Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos (ACM MM 2023)
 
-ACM MM 2023
+

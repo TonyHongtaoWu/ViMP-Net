@@ -4,10 +4,5 @@ ViMP-Net is a video deraining network to remove both rain streaks and raindrops 
 
 The dataset and code will be released soon.
 
-## A Quick Overview 
-
-
-
-## Datasets
 
 

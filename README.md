@@ -1,7 +1,7 @@
 # Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos (ACM MM 2023)
 Hongtao Wu, Yijun Yang, Haoyu Chen, Jingjing Ren, Lei Zhu
 
-[Paper Download](https://dl.acm.org/doi/abs/10.1145/3581783.3612001)
+This repo is the official Pytorch implementation of [Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos](https://dl.acm.org/doi/abs/10.1145/3581783.3612001).
 
 <hr />
 

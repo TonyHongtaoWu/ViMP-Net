@@ -2,6 +2,8 @@
 Hongtao Wu, Yijun Yang, Haoyu Chen, Jingjing Ren, Lei Zhu
 
 This repo is the official Pytorch implementation of [Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos](https://dl.acm.org/doi/abs/10.1145/3581783.3612001).
+The first dataset and approach for video rain streaks and raindrops removal.
+
 
 <hr />
 

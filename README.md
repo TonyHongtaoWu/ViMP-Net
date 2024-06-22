@@ -18,7 +18,7 @@ Our VRDS dataset can be downloaded [here](https://hkustgz-my.sharepoint.com/:f:/
 
 
 ## Our Results
-The visual results of ViMP-Net can be downloaded [here](https://hkustgz-my.sharepoint.com/:u:/g/personal/hwu375_connect_hkust-gz_edu_cn/EVM_XI3KcE9DgQaE9hbXvLQBjhnMP0rvQnSVcnOFcsMyTA?e=7tE2Kk).
+The visual results of ViMP-Net can be downloaded in [Google Drive](https://drive.google.com/file/d/1yEFbQbh45hWOu2g4HR9-SUvZZpyJJd7l/view?usp=sharing) and [Outlook](https://hkustgz-my.sharepoint.com/:u:/g/personal/hwu375_connect_hkust-gz_edu_cn/EVM_XI3KcE9DgQaE9hbXvLQBjhnMP0rvQnSVcnOFcsMyTA?e=7tE2Kk).
 
 
 ## Contact

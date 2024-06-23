@@ -1142,10 +1142,6 @@ class GenerateSegmentIndices:
         drop_path_root = results['drop_path']
         streak_path_root = results['streak_path']
 
-
-        #print(neighbor_list, gt_path_root, clip_name, 'in line 1111')
-        #print([v for v in neighbor_list], 'in line 1112')
-        #改了这里
         lq_path = [
             osp.join(lq_path_root, clip_name, f'{v:08d}.png')
             for v in neighbor_list

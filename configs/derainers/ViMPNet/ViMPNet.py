@@ -110,7 +110,6 @@ data = dict(
         gt_folder='../data/testgt',
         pipeline=test_pipeline,
         scale=1,
-        #val_partition='official',
         test_mode=True),
 )
 
@@ -149,4 +148,3 @@ load_from = None
 resume_from = None
 workflow = [('train', 1)]
 find_unused_parameters = True
-#1.5hole

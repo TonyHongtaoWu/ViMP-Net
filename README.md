@@ -43,7 +43,7 @@ Install MAP-Net from source.
 
 ```shell
 git clone https://github.com/TonyHongtaoWu/ViMP-Net.git
-cd MAP-Net
+cd ViMP-Net
 pip3 install -e .
 ```
 

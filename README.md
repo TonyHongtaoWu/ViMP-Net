@@ -17,6 +17,59 @@ The first dataset and approach for video rain streaks and raindrops removal.
 Our VRDS dataset can be downloaded [here](https://hkustgz-my.sharepoint.com/:f:/g/personal/hwu375_connect_hkust-gz_edu_cn/EmI_nfrnMyNAohEwNtnq50MB22RWxp-x_mtp264aVzOxlA?e=CjP3kO).
 
 
+
+
+## Installation
+
+This implementation is based on [MMEditing](https://github.com/open-mmlab/mmediting),
+which is an open-source image and video editing toolbox.
+
+
+Below are quick steps for installation.
+
+**Step 1.**
+Install PyTorch following [official instructions](https://pytorch.org/get-started/locally/).
+
+**Step 2.**
+Install MMCV with [MIM](https://github.com/open-mmlab/mim).
+
+```shell
+pip3 install openmim
+mim install mmcv-full
+```
+
+**Step 3.**
+Install MAP-Net from source.
+
+```shell
+git clone https://github.com/TonyHongtaoWu/ViMP-Net.git
+cd MAP-Net
+pip3 install -e .
+```
+
+Please refer to [MMEditing Installation](https://github.com/open-mmlab/mmediting/blob/master/docs/en/install.md) for more detailed instruction.
+
+
+## Training and Testing
+You may need to adjust the dataset path and dataloader before starting.
+
+You can train ViMP-Net on VRDS dataset using the below command with 4 GPUs:
+
+```shell
+CUDA_VISIBLE_DEVICES=0,1,2,3 ./tools/dist_train.sh configs/derainers/ViMPNet/ViMPNet.py 4
+```
+
+
+You can use the following command with 1 GPU to test your trained model `xxx.pth`:
+
+```shell
+CUDA_VISIBLE_DEVICES=0 ./tools/dist_test.sh configs/derainers/ViMPNet/ViMPNet.py xxx.pth 1
+```
+
+You can find one model checkpoint trained on VRDS dataset [here](https://drive.google.com/drive/folders/1Iu_sxlN3nUpi99QUxWAnRP1a0mNNm2JU?usp=sharing).
+
+
+
 ## Our Results
 The visual results of ViMP-Net can be downloaded in [Google Drive](https://drive.google.com/file/d/1yEFbQbh45hWOu2g4HR9-SUvZZpyJJd7l/view?usp=sharing) and [Outlook](https://hkustgz-my.sharepoint.com/:u:/g/personal/hwu375_connect_hkust-gz_edu_cn/EVM_XI3KcE9DgQaE9hbXvLQBjhnMP0rvQnSVcnOFcsMyTA?e=7tE2Kk).
 

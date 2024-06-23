@@ -10,7 +10,6 @@ from ..builder import build_backbone, build_loss
 from ..registry import MODELS
 
 
-# from emodules.flow_comp import FlowCompletionLoss
 
 @MODELS.register_module()
 class Derainer(BaseModel):
@@ -65,8 +64,7 @@ class Derainer(BaseModel):
 
         if test_mode:
             return self.forward_test(lq, gt, **kwargs)
-        # print(lq.shape,"in basic_restorer75")
-        # print(gt.shape,"in basic_restorer76")
+       
         return self.forward_train(lq, gt, mask, drop, streak)
 
     def forward_train(self, lq, gt, mask, drop, streak):

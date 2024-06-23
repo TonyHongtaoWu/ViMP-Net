@@ -63,7 +63,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 ./tools/dist_train.sh configs/derainers/ViMPNet/ViM
 You can use the following command with 1 GPU to test your trained model `xxx.pth`:
 
 ```shell
-CUDA_VISIBLE_DEVICES=0 ./tools/dist_test.sh configs/derainers/ViMPNet/ViMPNet.py xxx.pth 1
+CUDA_VISIBLE_DEVICES=0 ./tools/dist_test.sh configs/derainers/ViMPNet/ViMPNet.py "xxx.pth" 1 --save-path './save_path/'
 ```
 
 You can find one model checkpoint trained on VRDS dataset [here](https://drive.google.com/drive/folders/1Iu_sxlN3nUpi99QUxWAnRP1a0mNNm2JU?usp=sharing).

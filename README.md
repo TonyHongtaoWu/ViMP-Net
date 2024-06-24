@@ -11,13 +11,8 @@ The first dataset and approach for video rain streaks and raindrops removal.
 <hr />
 
 
-
-
 ## Our Dataset
 Our VRDS dataset can be downloaded [here](https://hkustgz-my.sharepoint.com/:f:/g/personal/hwu375_connect_hkust-gz_edu_cn/EmI_nfrnMyNAohEwNtnq50MB22RWxp-x_mtp264aVzOxlA?e=CjP3kO).
-
-
-
 
 ## Installation
 
@@ -39,7 +34,7 @@ mim install mmcv-full
 ```
 
 **Step 3.**
-Install MAP-Net from source.
+Install ViMP-Net from source.
 
 ```shell
 git clone https://github.com/TonyHongtaoWu/ViMP-Net.git
@@ -59,11 +54,10 @@ You can train ViMP-Net on VRDS dataset using the below command with 4 GPUs:
 CUDA_VISIBLE_DEVICES=0,1,2,3 ./tools/dist_train.sh configs/derainers/ViMPNet/ViMPNet.py 4
 ```
 
-
-You can use the following command with 1 GPU to test your trained model `xxx.pth`:
+You can use the following command with 1 GPU to test your trained model `model.pth`:
 
 ```shell
-CUDA_VISIBLE_DEVICES=0 ./tools/dist_test.sh configs/derainers/ViMPNet/ViMPNet.py "xxx.pth" 1 --save-path './save_path/'
+CUDA_VISIBLE_DEVICES=0 ./tools/dist_test.sh configs/derainers/ViMPNet/ViMPNet.py "model.pth" 1 --save-path './save_path/'
 ```
 
 You can find one model checkpoint trained on VRDS dataset [here](https://drive.google.com/drive/folders/1Iu_sxlN3nUpi99QUxWAnRP1a0mNNm2JU?usp=sharing).
